@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../style/styles.css" rel="stylesheet">
+  <title>UniHub</title>
+</head>
+<body class="bg-[#e7e7e7] font-[poppins] flex flex-row flex-wrap">  
+  <nav class="pc-navigation text-gray-500 fixed top-0 left-0 w-1/5 h-100% hidden md:flex flex-col text-2xl font-medium px-3 py-4  gap-2">
+    <div style="background-image: url(images/logo_00000.png);" class="logo mb-12 w-32 h-16 bg-no bg-no-repeat"></div>
+
+    <a href="index.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:home" class="text-4xl"></iconify-icon>
+      <p>Home</p>
+    </a>
+
+    <a href="pages/discover.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:search" class="text-4xl"></iconify-icon>
+      <p>Discover</p>
+    </a>
+
+    <a href="pages/bookmark.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:bookmark" class="text-4xl"></iconify-icon>
+      <p>Bookmarks</p>
+    </a>
+
+    <a href="pages/community.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-2">
+      <iconify-icon icon="fluent:people-community-24-regular" class="text-5xl"></iconify-icon>
+      <p>Community</p>
+    </a>
+
+    <a href="pages/profile.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:user" class="text-4xl"></iconify-icon>
+      <p>Profile</p>
+    </a>
+  </nav>
+
+  <nav class="mobile-navigation fixed bottom-0 left-0 w-full h-16 bg-white flex md:hidden justify-between text-base font-medium text-gray-500 px-3 py-2 border-t border-gray-400 gap-2 z-50">
+
+    <a href="index.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:home" class="text-4xl text-white"></iconify-icon>
+    </a>
+
+    <a href="pages/discover.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:search" class="text-4xl"></iconify-icon>
+    </a>
+
+    <a href="pages/bookmark.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:bookmark" class="text-4xl"></iconify-icon>
+    </a>
+
+    <a href="pages/community.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-2">
+      <iconify-icon icon="fluent:people-community-24-regular" class="text-5xl"></iconify-icon>
+    </a>
+
+    <a href="pages/profile.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:user" class="text-4xl"></iconify-icon>
+    </a>
+  </nav>
+  
+
+  <section class="w-full pb-20 md:ml-[20%] md:w-4/5 flex flex-col items-center gap-2 px-5 py-5 border-l border-gray-300 bg-white h-full">
+    <h1 class="text-3xl font-bold">Welcome to UniHub</h1>
+
+    <p class="text-sm md:text-base text-gray-500">Discover what's happening on campus</p>
+
+    <section class="happening-now mt-10 flex flex-col justify-center gap-6">
+
+      <h1 class="text-lg md:text-2xl font-bold">Happening Now</h1>
+
+      <div class="flex flex-row flex-wrap justify-center items-center gap-6">
+        <div class="flex flex-col w-80 h-60 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/seminar.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs bg-red-600 rounded-lg px-2 py-0.5 w-fit h-fit">LIVE</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">Computer Science Society ...</h1>
+            <p class="planner text-base text-gray-500">CS Society</p>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">2:00 PM - 6:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-80 h-60 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/concert.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs bg-red-600 rounded-lg px-2 py-0.5 w-fit h-fit">LIVE</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">Live Music Performance</h1>
+            <p class="planner text-base text-gray-500">Music Department</p>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">3:30 PM - 5:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-80 h-60 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/basketball.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs bg-red-600 rounded-lg px-2 py-0.5 w-fit h-fit">LIVE</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">VC Basketball Tournament ...</h1>
+            <p class="planner text-base text-gray-500">Sports Committee</p>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">4:00 PM - 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="upcoming-events mt-10 flex flex-col justify-center gap-4">
+
+      <h1 class="text-lg md:text-2xl font-bold">Upcoming Events</h1>
+
+      <div class="flex flex-row flex-wrap justify-center items-center gap-6">
+
+        <div class="flex flex-col w-80 h-80 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/comp.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs liquid-glass rounded-lg px-2 py-0.5 mx-4 my-2 w-fit h-fit">Educational</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">Career fair</h1>
+            <p class="planner text-base text-gray-500">Computing Faculty</p>
+            <div class="date flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:calender" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">Tomorrow</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">9:00 AM - 4:00 PM</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:location" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">New Lecture Hall</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-80 h-80 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/engine.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs liquid-glass rounded-lg px-2 py-0.5 mx-4 my-2 w-fit h-fit">Educational</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">Engineering Week Open...</h1>
+            <p class="planner text-base text-gray-500">Engineering Faculty</p>
+            <div class="date flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:calender" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">March 18, 2024</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">10:00 AM - 12:00 PM</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:location" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">Engineering Auditorium</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-80 h-80 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/culture.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs liquid-glass rounded-lg px-2 py-0.5 mx-4 my-2 w-fit h-fit">Cultural</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">Cultural Night</h1>
+            <p class="planner text-base text-gray-500">SUG</p>
+            <div class="date flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:calender" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">March 20, 2024</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">6:00 PM - 10:00 PM</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:location" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">Open Air Theatre</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-80 h-80 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/leadership.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs liquid-glass rounded-lg px-2 py-0.5 mx-4 my-2 w-fit h-fit">Educational</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">Leadership Workshop</h1>
+            <p class="planner text-base text-gray-500">WEMA BANK</p>
+            <div class="date flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:calender" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">March 22, 2024</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">2:00 PM - 5:00 PM</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:location" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">Conference Room A</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col w-80 h-80 rounded-2xl border border-gray-400">
+          <div style="background-image: url(/images/soccer.jpg);" class="h-1/2 bg-no-2 flex flex-row justify-between px-4 py-2 rounded-t-2xl">
+            <p class="text-white text-xs liquid-glass rounded-lg px-2 py-0.5 mx-4 my-2 w-fit h-fit">Sports</p>
+            <iconify-icon icon="lucide:bookmark" class="bookmark text-xl bg-gray-500 rounded-lg p-2 w-fit h-fit text-white bookmark-icon"></iconify-icon>
+          </div>
+          <div class="h-1/2 flex flex-col py-4 px-2 gap-2">
+            <h1 class="event text-xl font-semibold">VC Super League</h1>
+            <p class="planner text-base text-gray-500">Sports Committee</p>
+            <div class="date flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:calender" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">March 25, 2024</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="mingcute:time-line" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">4:00 PM - 6:00 PM</p>
+            </div>
+            <div class="time flex flex-row items-center gap-2">
+              <iconify-icon icon="uil:location" class="text-base text-gray-500"></iconify-icon>
+              <p class="text-xs text-gray-500">Main Stadium</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </section>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <script src="scripts/index.js"></script>
+</body>
+</html>

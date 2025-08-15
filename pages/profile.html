@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../style/styles.css" rel="stylesheet">
+  <title>UniHub</title>
+</head>
+<body class="bg-[#e7e7e7] font-[poppins] flex flex-row flex-wrap">  
+  <nav class="pc-navigation text-gray-500 fixed top-0 left-0 w-1/5 h-[100vh] hidden md:flex flex-col text-2xl font-medium px-3 py-4 gap-2">
+    <div style="background-image: url(../images/logo_00000.png);" class="logo mb-12 w-32 h-16 bg-no bg-no-repeat"></div>
+
+    <a href="../index.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:home" class="text-4xl"></iconify-icon>
+      <p class="">Home</p>
+    </a>
+
+    <a href="discover.html" class="flex flex-row items-center bg-[#e7e7e7]  px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:search" class="text-4xl"></iconify-icon>
+      <p class="">Discover</p>
+    </a>
+
+    <a href="bookmark.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:bookmark" class="text-4xl"></iconify-icon>
+      <p class="">Bookmarks</p>
+    </a>
+
+    <a href="community.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-2">
+      <iconify-icon icon="fluent:people-community-24-regular" class="text-5xl"></iconify-icon>
+      <p class="">Community</p>
+    </a>
+
+    <a href="profile.html" class="flex flex-row items-center bg-[#e7e7e7] px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:user" class="text-4xl"></iconify-icon>
+      <p class="">Profile</p>
+    </a>
+  </nav>
+
+  <nav class="mobile-navigation fixed bottom-0 left-0 w-full h-16 bg-white flex md:hidden justify-between text-base font-medium text-gray-500 px-3 py-2 border-t border-gray-400 gap-2 z-50">
+
+    <a href="../index.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:home" class="text-4xl"></iconify-icon>
+    </a>
+
+    <a href="discover.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:search" class="text-4xl"></iconify-icon>
+    </a>
+
+    <a href="bookmark.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:bookmark" class="text-4xl"></iconify-icon>
+    </a>
+
+    <a href="community.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-2">
+      <iconify-icon icon="fluent:people-community-24-regular" class="text-5xl"></iconify-icon>
+    </a>
+
+    <a href="profile.html" class="flex flex-row items-center bg-white px-3 py-2 rounded-xl gap-5">
+      <iconify-icon icon="lucide:user" class="text-4xl"></iconify-icon>
+    </a>
+  </nav>
+  
+
+  <section class="w-full pb-20 md:ml-[20%] md:w-4/5 flex flex-col justify-center items-center-center gap-2 px-5 py-5 border-l border-gray-300 bg-white h-full">
+    <h1 class="text-3xl font-bold">Profile</h1>
+
+    <p class="text-sm md:text-base text-gray-500">Manage your account and preferences</p>
+
+    <div class="mt-4 flex flex-col md:flex-row gap-4">
+      <div class="flex flex-col md:w-4/5 gap-8">
+
+        <div class="profile-info px-5 py-4 border border-gray-400 rounded-2xl">
+
+          <header class="flex flex-row justify-between items-center">
+            <h1 class="text-xl font-medium">Profile Information</h1>
+            <button class="flex flex-row items-center px-2 py-1 rounded-lg hover:bg-gray-200 border border-gray-300 gap-4">
+              <iconify-icon icon="simple-line-icons:pencil"></iconify-icon>
+              <p class="text-sm font-medium">Edit Profile</p>
+            </button>
+          </header>
+
+          <div class="user-info mt-6 flex flex-row gap-2">
+            <div style="background-image: url(../images/man.jpg);" class="user-img w-36 h-11 md:h-28 bg-no-2 rounded-full bg-no-2"></div>
+
+            <div class="flex flex-col pb-4 border-b border-gray-400 gap-2">
+
+              <h1 class="user-name text-xl font-semibold">John Doe</h1>
+
+              <p class="mat-no text-base text-gray-500">U2023/5570016</p>
+
+              <p class="department text-sm text-gray-500">Computer Science</p>
+
+              <p class="user-bio text-sm text-black">Final year Computer Science student passionate about software development and AI. Love attending tech events and meeting new people.</p>
+            
+            </div>
+
+          </div>
+
+          <div class="mt-8 flex flex-col md:flex-row gap-8">
+
+            <div class="flex flex-col gap-2">
+
+              <h1 class="text-sm font-semibold text-gray-500">Email</h1>
+
+              <p class="email text-base">john.doe@student.uniport.edu.ng</p>
+
+            </div>
+
+            <div class="flex flex-col gap-2">
+
+              <h1 class="text-sm font-semibold text-gray-500">Department</h1>
+
+              <p class="department text-base">Computer Science</p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="user-preferences px-5 py-4 border border-gray-400 rounded-2xl flex flex-col gap-4">
+
+          <header class="flex flex-col justify-center">
+            <h1 class="text-xl font-medium">Event Preferences</h1>
+            <p class="text-sm text-gray-500 font-medium">Choose your interests to get personalized event recommendations</p>
+          </header>
+
+          <div class="flex flex-row gap-2 overflow-scroll md:overflow-auto">            
+
+            <button class="preference px-2 py-1.5 bg-gray-200 rounded-lg">
+              <p class="text-xs">Educational</p>
+            </button>
+
+            <button class="preference px-2 py-1.5 bg-gray-200 rounded-lg">
+              <p class="text-xs">Technology</p>
+            </button>
+
+            <button class="preference px-2 py-1.5 bg-gray-200 rounded-lg">
+              <p class="text-xs">Sports</p>
+            </button>
+
+            <button class="preference px-2 py-1.5 bg-gray-200 rounded-lg">
+              <p class="text-xs">Cultural</p>
+            </button>  
+            
+            <button class="preference px-2 py-1.5 bg-gray-200 rounded-lg">
+              <p class="text-xs">Entertainment</p>
+            </button>     
+
+          </div>
+
+          <button class="w-fit px-2 py-1.5 flex flex-row items-center gap-4 hover:bg-gray-300 border border-gray-400 rounded-lg">
+            <iconify-icon icon="simple-line-icons:settings"></iconify-icon>
+            <p class="text-sm font-medium">Edit Profile</p>
+          </button>
+
+        </div>
+
+        <div class="following px-5 py-4 border border-gray-400 rounded-2xl flex flex-col gap-4">
+
+          <header class="flex flex-col justify-center">
+            <h1 class="text-xl font-medium">Following</h1>
+            <p class="text-sm text-gray-500 font-medium">Clubs and organizations you follow</p>
+          </header>
+
+          <div class="flex flex-col w-full gap-2">            
+
+            <button class="preference mx-2 px-2 py-4 flex flex-row justify-between hover:bg-gray-200 rounded-lg">
+              <p class="text-sm">Computer Science Society</p>
+              <p class="text-sm font-medium">Following</p>
+            </button>
+
+            <button class="preference mx-2 px-2 py-4 flex flex-row justify-between hover:bg-gray-200 rounded-lg">
+              <p class="text-sm">Basketball Club</p>
+              <p class="text-sm font-medium">Following</p>
+            </button>
+
+            <button class="preference mx-2 px-2 py-4 flex flex-row justify-between hover:bg-gray-200 rounded-lg">
+              <p class="text-sm">Music Club</p>
+              <p class="text-sm font-medium">Following</p>
+            </button>
+
+            <button class="preference mx-2 px-2 py-4 flex flex-row justify-between hover:bg-gray-200 rounded-lg">
+              <p class="text-sm">Debate Society</p>
+              <p class="text-sm font-medium">Following</p>
+            </button>
+
+            <button class="preference mx-2 px-2 py-4 flex flex-row justify-between hover:bg-gray-200 rounded-lg">
+              <p class="text-sm">Cultural Association</p>
+              <p class="text-sm font-medium">Following</p>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="flex flex-col md:w-1/5 gap-8">
+
+        <div class="activity-stats px-5 py-4 border border-gray-400 rounded-2xl flex flex-col gap-4">
+
+          <header class="flex flex-col justify-center">
+            <h1 class="text-xl font-medium">Activity Stats</h1>
+          </header>
+
+          <div class="flex flex-col gap-6">            
+
+            <div class="flex flex-row justify-between">
+              <p class="text-sm text-gray-500">Events Attended</p>
+              <p class="events-attended text-sm font-bold">24</p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <p class="text-sm text-gray-500">Bookmarked Events</p>
+              <p class="bookmarked-events text-sm font-bold">12</p>
+            </div>
+
+            <div class="flex flex-row justify-between">
+              <p class="text-sm text-gray-500">Following Clubs</p>
+              <p class="following text-sm font-bold">5</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="account-settings px-5 py-4 border border-gray-400 rounded-2xl flex flex-col gap-4">
+
+          <header class="flex flex-col justify-center">
+            <h1 class="text-xl font-medium">Account</h1>
+          </header>
+
+          <div class="flex flex-col w-full gap-2">  
+            
+          <button class="w-full px-2 py-1.5 flex flex-row gap-4 hover:bg-gray-300 border border-gray-400 rounded-lg">
+            <iconify-icon icon="simple-line-icons:settings"></iconify-icon>
+            <p class="text-sm font-medium">Settings</p>
+          </button>
+
+          <button class="w-full px-2 py-1.5 flex flex-row gap-4 bg-red-600 hover:bg-red-500 text-white rounded-lg">
+            <iconify-icon icon="mingcute:exit-line"></iconify-icon>
+            <p class="text-sm font-medium">Settings</p>
+          </button>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+  <script src="../scripts/index.js"></script>
+</body>
+</html>
