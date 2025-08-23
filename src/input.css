@@ -1,7 +1,4 @@
 @import "tailwindcss";
-@plugin 'tailwind-scrollbar';
-@plugin "@iconify/tailwind4";
-@import "tailwindcss-animated";
 /* scrollbar */
 
   .always-show-scrollbar::-webkit-scrollbar {
@@ -110,4 +107,3 @@
   background-repeat: no-repeat;
   /* Other styles like height, width, etc. */
 }
-
