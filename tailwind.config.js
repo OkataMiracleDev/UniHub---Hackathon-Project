@@ -1,10 +1,16 @@
-    // tailwind.config.js
-    module.exports = {
-      darkMode: 'media',
-      // ... other configurations
-    }
-    // or
-    module.exports = {
-      darkMode: 'class',
-      // ... other configurations
-    }
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./pages/**/*.{html,js}",
+    "./scripts/**/*.{html,js}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [
+    require('tailwindcss-animated'),
+    require('tailwind-scrollbar'),
+    require('@iconify/tailwind')(),
+  ],
+}
